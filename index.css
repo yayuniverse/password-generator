@@ -1,0 +1,163 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'Array-Regular';
+    src: url('../fonts/Array-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body {
+    margin: 0;
+    padding-top: 20px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    position: relative;
+    background: #0645AD;
+    height: 100vh;
+    font-family: Array-Regular, sans-serif;
+    color: #9CC0FC;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px 0;
+    border-top: 1px dotted #9CC0FC;
+    border-bottom: 1px dotted #9CC0FC;
+}
+
+h1 {
+    letter-spacing: 1px;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
+}
+
+#pwds {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+    margin: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    gap: 40px;
+}
+
+#pwds svg {
+    height: fit-content;
+}
+
+#divider {
+    width: 1px;
+    height: 100%;
+    border-left: 1px dotted #9CC0FC;
+    /* border-right: 1px dotted #9CC0FC; */
+}
+
+#pwd1, #pwd2 {
+    font-size: 48px;
+    letter-spacing: 4px;
+    margin: 0;
+    width: 600px;
+}
+
+#pwd1 {
+    text-align: end;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 120px;
+}
+
+button {
+    background: none;   
+    border: none; 
+    font: inherit;
+    font-size: 20px;
+    color: inherit;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    border: 1px dotted;
+}
+
+.css-checkbox { 
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; 
+    width: 1px; 
+    margin: -1px; 
+    padding: 0; 
+    border: 0; }
+    
+#boxes { 
+    display: flex; 
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
+}
+    
+.css-checkbox + label { 
+    position: relative; 
+    font-size: 16px; 
+    cursor: pointer; 
+    display: inline-flex; 
+    align-items: center; 
+    height: 22px; 
+    color: rgb(156, 191, 252); 
+}
+
+.css-checkbox + label::before { 
+    content: " "; 
+    display: inline-block; 
+    vertical-align: middle;
+    margin-right: 8px; 
+    width: 20px; 
+    height: 20px; 
+    background-color: rgb(6, 70, 173); 
+    border-width: 1px; 
+    border-style: dotted; 
+    border-color: rgb(156, 191, 252); 
+    border-radius: 0px; 
+    box-shadow: rgba(42, 42, 42, 0) 0px 0px 0px 0px; 
+}
+
+.css-checkbox:checked + label::after { 
+    content: " "; 
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBmaWxsPSIjOWNiZmZjIiBkPSJNMCA5NkMwIDYwLjY1IDI4LjY1IDMyIDY0IDMySDM4NEM0MTkuMyAzMiA0NDggNjAuNjUgNDQ4IDk2VjQxNkM0NDggNDUxLjMgNDE5LjMgNDgwIDM4NCA0ODBINjRDMjguNjUgNDgwIDAgNDUxLjMgMCA0MTZWOTZ6Ii8+PC9zdmc+"); 
+    background-repeat: no-repeat; 
+    background-size: 16px 16px; 
+    background-position: center center; 
+    position: absolute; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-left: 0px; 
+    left: -1px; 
+    top: 0px; 
+    text-align: center; 
+    background-color: transparent; 
+    font-size: 10px; 
+    height: 22px; 
+    width: 22px; 
+}

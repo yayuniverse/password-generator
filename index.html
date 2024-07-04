@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="index.css" />
+        <script src="index.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <img src="catglasses.png" alt="cat with sunglasses on" />
+            <h1>Generate a secure password</h1>
+            <img src="catglasses.png" alt="cat with sunglasses on" />
+        </header>
+
+        <div id="pwds">
+
+            
+            <p id="pwd1">password1</p>
+           
+
+            <!-- <svg width="1" height="64" viewBox="0 0 1 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0.5" y1="2.18557e-08" x2="0.499997" y2="64" stroke="#6BA1FA" stroke-dasharray="4 4"/>
+            </svg>    -->
+
+            <div id="divider">
+            
+            </div>
+      
+            <p id="pwd2">password2</p>
+            
+
+        </div>
+
+        <div id="footer"> 
+
+            <div id="boxes">
+                <input name="cssCheckbox" id="demo_opt_1" type="checkbox" class="css-checkbox">
+                <label for="demo_opt_1">Symbols</label>
+                <input name="cssCheckbox" id="demo_opt_2" type="checkbox" class="css-checkbox" checked="">
+                <label for="demo_opt_2">Numbers</label>
+            </div>
+
+            <button type="button" onclick="generate()">Generate</button>
+
+        </div>
+    </body>
+
+
+</html>
